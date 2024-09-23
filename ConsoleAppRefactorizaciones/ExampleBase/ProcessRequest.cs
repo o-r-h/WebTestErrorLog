@@ -1,23 +1,21 @@
 ﻿using ConsoleAppRefactorizaciones.Clases;
+using ConsoleAppRefactorizaciones.ExampleBase;
 using ConsoleAppRefactorizaciones.Funciones;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleAppRefactorizaciones.EjemploBase
 {
     public class ProcessRequest
     {
         //clases involucradas en el request
-        public Clases.Alfa Alfa { get; set; }
-        public Clases.Beta Beta { get; set; }
-        public Clases.Gamma Gamma { get; set; }
-        public RequestObtenerBase RequestObtenerBase { get; set; }
-        public VerificarUsuario verificarUsuario { get; set; }
-        public RequestFoto foto { get; set; }
-        public RequestConsultarReniec requestConsultarReniec { get; set; }
+        public ClassesExample.Alfa Alfa { get; set; }
+        public ClassesExample.Beta Beta { get; set; }
+        public ClassesExample.Gamma Gamma { get; set; }
+        public RequestGetBase RequestGetBase { get; set; }
+        public VerifyUser verifyUser { get; set; }
+        public RequestPic pic { get; set; }
+        public RequestDataReniec RequestDataReniec { get; set; }
 
         //data para compartir entre procesos
         public Object DataReniecHandleResult { get; set; }
@@ -26,7 +24,7 @@ namespace ConsoleAppRefactorizaciones.EjemploBase
         public bool IsAlfaOk { get; set; }
         public bool IsBetaOk { get; set; }
         public bool IsGammaOk { get; set; }
-        public bool IsVerificarUsuarioOk { get; set; }
+        public bool IsVerificarUserOk { get; set; }
         public bool IsGuardarFotoOk { get; set; }
         public bool IsObtenerDatoReniecOk { get; set; }
 

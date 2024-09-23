@@ -1,4 +1,4 @@
-﻿using ConsoleAppRefactorizaciones.Cadena;
+﻿using ConsoleAppRefactorizaciones.Chain;
 using ConsoleAppRefactorizaciones.EjemploBase;
 using System;
 

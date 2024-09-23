@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppRefactorizaciones.Funciones
 {
-	public class VerificarUsuario : IVerificarUsuario
+	public class VerifyUser : IVerifyUser
 	{
 
-		public Response VerificarDatoUsuario(string usuario, string token)
+		public Response VerifyUserData(string User, string token)
 		{
 			Response response = new Response
 			{
@@ -18,10 +18,10 @@ namespace ConsoleAppRefactorizaciones.Funciones
 				Message = ""
 			};
 
-			if (string.IsNullOrEmpty(usuario))
+			if (string.IsNullOrEmpty(User))
 			{
 				response.CodeBts = 400;
-				response.Message = "Usuario debe tener valor";
+				response.Message = "User must have value";
 				response.Success = false;
 				return response;
 			}

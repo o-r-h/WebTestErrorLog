@@ -43,31 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadena\HandleBase.cs" />
-    <Compile Include="Cadena\HandlerFactory.cs" />
-    <Compile Include="Cadena\IHandler.cs" />
-    <Compile Include="Cadena\Processor.cs" />
-    <Compile Include="Clases\RequestConsultarReniec.cs" />
-    <Compile Include="Clases\RequestFoto.cs" />
-    <Compile Include="Clases\RequestObtenerBase.cs" />
-    <Compile Include="EjemploBase\Clases.cs" />
-    <Compile Include="EjemploBase\ProcessRequest.cs" />
-    <Compile Include="Funciones\GuardarFoto.cs" />
-    <Compile Include="Funciones\IDatosReniec.cs" />
-    <Compile Include="Funciones\IGuardarFoto.cs" />
-    <Compile Include="Funciones\IVerificarUsuario.cs" />
-    <Compile Include="Funciones\Response.cs" />
-    <Compile Include="Funciones\DatosReniec.cs" />
-    <Compile Include="Funciones\VerificarUsuario.cs" />
+    <Compile Include="Chain\HandleBase.cs" />
+    <Compile Include="Chain\HandlerFactory.cs" />
+    <Compile Include="Chain\IHandler.cs" />
+    <Compile Include="Chain\Processor.cs" />
+    <Compile Include="Classes\RequestDataReniec.cs" />
+    <Compile Include="Classes\RequestPic.cs" />
+    <Compile Include="Classes\RequestGetBase.cs" />
+    <Compile Include="ExampleBase\Classes.cs" />
+    <Compile Include="ExampleBase\ProcessRequest.cs" />
+    <Compile Include="Functions\SaveFoto.cs" />
+    <Compile Include="Functions\IDataReniec.cs" />
+    <Compile Include="Functions\ISavePic.cs" />
+    <Compile Include="Functions\IVerifyUser.cs" />
+    <Compile Include="Functions\Response.cs" />
+    <Compile Include="Functions\DataReniec.cs" />
+    <Compile Include="Functions\VerifyUser.cs" />
     <Compile Include="Handlers\AlfaHandler.cs" />
     <Compile Include="Handlers\BetaHandler.cs" />
-    <Compile Include="Handlers\CargarFotoHandler.cs" />
+    <Compile Include="Handlers\SavePictureHandler.cs" />
     <Compile Include="Handlers\GammaHandler.cs" />
-    <Compile Include="Handlers\ObtenerReniecHandler.cs" />
-    <Compile Include="Handlers\VerificarUsuarioHandler.cs" />
+    <Compile Include="Handlers\GetReniecHandler.cs" />
+    <Compile Include="Handlers\VerifyUserHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReqBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

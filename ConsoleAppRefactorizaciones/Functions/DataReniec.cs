@@ -7,27 +7,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppRefactorizaciones.Funciones
 {
-	public class GuardarFoto : IGuardarFoto
+	public class DataReniec : IDataReniec
 	{
-		public Response GuardarFotoVisita(RequestFoto foto)
+		public Response GetDataReniec(RequestDataReniec RequestDataReniec)
 		{
 			Response response = new Response
 			{
 				CodeBts = 0,
 				Success = true,
-				Message = ""
+				Message = "",
+				Data = new List<String> { "Peter", "Parker", "00487524" }
 			};
-
-			if (!foto.IsValidFoto())
-			{
-				response.CodeBts = 400;
-				response.Message = foto.MessageError;
-				response.Success = false;
-				return response;
-			}
 			return response;
-
 		}
-
 	}
 }

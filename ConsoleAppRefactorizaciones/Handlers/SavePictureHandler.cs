@@ -1,35 +1,33 @@
-﻿using ConsoleAppRefactorizaciones.Cadena;
+﻿using ConsoleAppRefactorizaciones.Chain;
 using ConsoleAppRefactorizaciones.EjemploBase;
 using ConsoleAppRefactorizaciones.Funciones;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleAppRefactorizaciones.Handlers
 {
-	public class CargarFotoHandler : HandlerBase
+	public class SavePictureHandler : HandlerBase
 	{
 
-		private readonly IGuardarFoto guardarFoto;
+		private readonly ISavePic savePic;
 
-		public CargarFotoHandler(IGuardarFoto guardarFoto)
+		public SavePictureHandler(ISavePic savePic)
 		{
-			this.guardarFoto = guardarFoto;
+			this.savePic = savePic;
 		}
 
 		public override void Handle(ProcessRequest request)
 		{
-			Console.WriteLine("Procesando Guardar Foto...");
-			Response response = guardarFoto.GuardarFotoVisita(request.foto);
+			Console.WriteLine("Proccesing save pic...");
+			Response response = savePic.SavePicVista(request.pic);
 			request.IsGuardarFotoOk = response.Success; // todo Ok
 
 			if (request.IsGuardarFotoOk)
 			{
 				base.Handle(request);
 				if ( request.DataReniecHandleResult !=null){
-					Console.WriteLine($"Leyendo datos de Reniec desde el handler foto:");
+					Console.WriteLine($"Reading Reniec data from previous handler pic:");
 					List<string> valores = (List<string>)request.DataReniecHandleResult;
 					foreach (string item in valores)
 					{
@@ -40,7 +38,7 @@ namespace ConsoleAppRefactorizaciones.Handlers
 			}
 			else
 			{
-				Console.WriteLine("Error validando guardar foto. Terminando el procesamiento.");
+				Console.WriteLine("Error saving pic. finishing process.");
 				Console.WriteLine($"Response.Success: {response.Success}");
 				Console.WriteLine($"Response.Message: {response.Message}");
 			}

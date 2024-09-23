@@ -1,6 +1,6 @@
 ﻿using ConsoleAppRefactorizaciones.EjemploBase;
 
-namespace ConsoleAppRefactorizaciones.Cadena
+namespace ConsoleAppRefactorizaciones.Chain
 {
     public abstract class HandlerBase : IHandler
     {

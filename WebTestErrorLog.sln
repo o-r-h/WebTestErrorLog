@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestMora", "ConsoleTestMora\ConsoleTestMora.csproj", "{8406E961-BC2B-4ABB-9045-8EA072DDBA8D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppRefactorizaciones", "ConsoleAppRefactorizaciones\ConsoleAppRefactorizaciones.csproj", "{BE881575-1ED2-472E-B7D8-351693C0456B}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8406E961-BC2B-4ABB-9045-8EA072DDBA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8406E961-BC2B-4ABB-9045-8EA072DDBA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8406E961-BC2B-4ABB-9045-8EA072DDBA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8406E961-BC2B-4ABB-9045-8EA072DDBA8D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE881575-1ED2-472E-B7D8-351693C0456B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE881575-1ED2-472E-B7D8-351693C0456B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE881575-1ED2-472E-B7D8-351693C0456B}.Release|Any CPU.ActiveCfg = Release|Any CPU

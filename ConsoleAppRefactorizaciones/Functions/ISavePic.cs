@@ -2,8 +2,8 @@
 
 namespace ConsoleAppRefactorizaciones.Funciones
 {
-	public interface IGuardarFoto
+	public interface ISavePic
 	{
-		Response GuardarFotoVisita(RequestFoto foto);
+		Response SavePicVista(RequestPic pic);
 	}
 }
