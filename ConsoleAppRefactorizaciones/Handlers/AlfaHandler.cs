@@ -1,10 +1,7 @@
 ﻿using ConsoleAppRefactorizaciones.Chain;
 using ConsoleAppRefactorizaciones.EjemploBase;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleAppRefactorizaciones.Handlers
 {
@@ -12,9 +9,8 @@ namespace ConsoleAppRefactorizaciones.Handlers
     {
         public override void Handle(ProcessRequest request)
         {
-            Console.WriteLine("Procesando Alfa...");
-            // Lógica para procesar Alfa
-            request.IsAlfaOk = true; // Simulación de procesamiento exitoso
+            Console.WriteLine("Processing Alfa...");
+            request.IsAlfaOk = true; // successfull result
 
             if (request.IsAlfaOk)
             {
@@ -22,7 +18,7 @@ namespace ConsoleAppRefactorizaciones.Handlers
             }
             else
             {
-                Console.WriteLine("Error en Alfa. Terminando el procesamiento.");
+                Console.WriteLine("Error. Finishing process.");
             }
         }
     }

@@ -9,9 +9,8 @@ namespace ConsoleAppRefactorizaciones.Handlers
     {
         public override void Handle(ProcessRequest request)
         {
-            Console.WriteLine("Procesando Gamma...");
-            // Lógica para procesar Gamma
-            request.IsGammaOk = true; // Simulación de procesamiento exitoso
+            Console.WriteLine("Processing Gamma...");
+            request.IsGammaOk = true; // Succefull process
 
             if (request.IsGammaOk)
             {
@@ -19,7 +18,7 @@ namespace ConsoleAppRefactorizaciones.Handlers
             }
             else
             {
-                Console.WriteLine("Error en Gamma. Terminando el procesamiento.");
+                Console.WriteLine("Error. Finishing process.");
             }
         }
     }

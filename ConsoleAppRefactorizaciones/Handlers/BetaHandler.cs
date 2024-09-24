@@ -12,9 +12,8 @@ namespace ConsoleAppRefactorizaciones.Handlers
     {
         public override void Handle(ProcessRequest request)
         {
-            Console.WriteLine("Procesando Beta...");
-            // Lógica para procesar Beta
-            request.IsBetaOk = true; // Simulación de procesamiento exitoso
+            Console.WriteLine("Processing Beta...");
+            request.IsBetaOk = true; // Susccefull process
 
             if (request.IsBetaOk)
             {
@@ -22,7 +21,7 @@ namespace ConsoleAppRefactorizaciones.Handlers
             }
             else
             {
-                Console.WriteLine("Error en Beta. Terminando el procesamiento.");
+                Console.WriteLine("Error. Finishing process.");
             }
         }
     }

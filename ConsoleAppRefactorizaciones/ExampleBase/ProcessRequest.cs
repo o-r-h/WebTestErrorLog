@@ -8,7 +8,7 @@ namespace ConsoleAppRefactorizaciones.EjemploBase
 {
     public class ProcessRequest
     {
-        //clases involucradas en el request
+        //clases for use in handlers
         public ClassesExample.Alfa Alfa { get; set; }
         public ClassesExample.Beta Beta { get; set; }
         public ClassesExample.Gamma Gamma { get; set; }
@@ -17,10 +17,10 @@ namespace ConsoleAppRefactorizaciones.EjemploBase
         public RequestPic pic { get; set; }
         public RequestDataReniec RequestDataReniec { get; set; }
 
-        //data para compartir entre procesos
+        //data to share between handlers
         public Object DataReniecHandleResult { get; set; }
 
-        //estados de los procesos
+        //state of handlers
         public bool IsAlfaOk { get; set; }
         public bool IsBetaOk { get; set; }
         public bool IsGammaOk { get; set; }
